@@ -33,6 +33,7 @@ pub fn build(b: *std.Build) void {
             "-DRAYGUI_IMPLEMENTATION",
         },
     });
+    lib.installHeader(b.path("raygui/src/raygui.h"), "raygui.h");
     lib.linkLibrary(raylib_dep.artifact("raylib"));
     lib.addIncludePath(b.path("raygui/src/"));
     b.installArtifact(lib);
