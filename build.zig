@@ -20,6 +20,7 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
+
     mod.addIncludePath(b.path("raygui/src"));
     const lib = b.addStaticLibrary(.{
         .name = "raygui",
@@ -36,5 +37,6 @@ pub fn build(b: *std.Build) void {
     lib.installHeader(b.path("raygui/src/raygui.h"), "raygui.h");
     lib.linkLibrary(raylib_dep.artifact("raylib"));
     lib.addIncludePath(b.path("raygui/src/"));
+    mod.linkLibrary(lib);
     b.installArtifact(lib);
 }
