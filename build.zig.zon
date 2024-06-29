@@ -24,8 +24,8 @@
     // internet connectivity.
     .dependencies = .{
         .raylib = .{
-            .url = "./raylib.tar.gz",
-            .hash = "1220551bb4b1a5ba6ee150c8e51002ac39b7376da7dca684de3b0c05772eae0eeefb",
+            .url = "zraylib/",
+            .hash = "122076a112c844e211956b1025d3edf1539dfaf8d34ff0cbaee8042609821d0e6c25",
         },
     },
     .paths = .{
@@ -45,7 +45,6 @@
         "raygui/projects",
         "raygui/src",
         "raygui/styles",
-        "raylib.tar.gz",
         // For example...
         //"LICENSE",
         //"README.md",

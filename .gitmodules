@@ -1,3 +1,6 @@
 [submodule "raygui"]
 	path = raygui
 	url = https://github.com/raysan5/raygui.git
+[submodule "zraylib"]
+	path = zraylib
+	url = https://github.com/delta1024/zraylib.git
